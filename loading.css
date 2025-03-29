@@ -1,0 +1,42 @@
+div{
+    border: solid black;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: auto;
+    animation: load 10s infinite;
+    transition: transform 500ms ease-in-out, background-color 500ms ease-in-out;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes load {
+    0% {
+        background-color: rgb(147, 9, 9);
+    }
+    20% {
+        background-color: rgb(215, 203, 40);
+    }
+    40% {
+        background-color: rgb(88, 152, 10);
+    }
+    60% {
+        background-color: rgb(9, 133, 147);
+    }
+    80% {
+        background-color: rgb(43, 7, 204);
+    }
+    100% {
+        background-color: rgb(185, 9, 220);
+    }
+}
+div:hover{
+    transform: scale(1.2) rotate(360deg); 
+}
+    
