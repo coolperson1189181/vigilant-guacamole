@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: rgb(46, 42, 42);
+}
+
+
+.container{
+    display: flex;
+    height: 90vh;
+    
+    flex-direction: row;
+    border: 10px solid black;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: NONE;
+    gap: 10px;
+    flex-grow: 0;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box:after{
+    content:'';
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    position: absolute;
+    transition: 150ms ease-in-out ;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.box:hover:after{
+    width: 100%;
+    cursor: pointer;
+    transition: 150ms ease-in-out ;
+}
+#box1{
+    background-color: hsl(0, 100%, 70%);
+    color:blue;
+    flex-shrink: 0;
+}
+#box2{
+    background-color: hsl(52, 100%, 70%);
+    color:blueviolet;
+}
+#box3{
+    background-color: hsl(111, 100%, 70%);
+    color:coral;
+}
+#box4{
+    background-color: hsl(201, 100%, 70%);
+    color:rgb(171, 25, 255);
+}
+#box5{
+    background-color: hsl(81, 96%, 32%);
+    color:rgb(255, 0, 0);
+}
+#box6{
+    background-color: hsl(127, 98%, 18%);
+    color:rgb(0, 4, 120);
+}
+#box7{
+    background-color: hsl(245, 100%, 70%);
+    color:rgb(159, 0, 0);
+}
+#box8{
+    background-color: hsl(51, 100%, 50%);
+    color:rgb(25, 255, 205);
+}
